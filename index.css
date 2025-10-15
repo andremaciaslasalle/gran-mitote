@@ -1,0 +1,17 @@
+body {
+    width: 1280px;
+}
+
+header{
+    display: flex;
+    height: 88px;
+    justify-content: space-between;
+    background-color: white;
+    text-align: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color:black;
+}
