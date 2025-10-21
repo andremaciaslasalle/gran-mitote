@@ -1,0 +1,162 @@
+/*Globales*/
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* 1REM es igual a 10px*/
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0px 20px;
+    font-size:1.6rem;
+}
+
+header{
+    display: flex;
+    height: 88px;
+    justify-content: space-between;
+    background-color: white;
+    text-align: center;
+    align-items: center;
+}
+
+h1,h2,h3 {
+    margin: 1rem 0 0 0;
+    text-transform:uppercase;
+    padding-top: 2rem;
+}
+
+a {
+    text-decoration: none;
+    color:black;
+    padding:0 2rem;
+}
+
+.btn {
+    background-color: white;
+    border-radius: 3px;
+    color: black;
+    border: 2px solid black;
+    border-radius:1rem;
+    padding: 1rem;
+}
+
+.btn-black {
+    background-color: rgb(0, 0, 0);
+    border-radius: 3px;
+    color: #ffffff;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius:1rem;
+    padding: 1rem;
+}
+
+/* Utilidades */
+
+.borde {
+    box-shadow:
+    0 1px 0 rgba(0,0,0,.08),          /* línea sutil */
+    0 10px 14px -8px rgba(0,0,0,.25); /* blur hacia abajo */
+}
+
+/*Footer */
+footer {
+    padding-bottom: 5rem;
+}
+footer .superior{
+  padding: 5rem 0;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr; 
+  align-items: center;
+  gap: 2rem;
+}
+footer .superior h4,
+footer .superior p{ margin:0; }
+
+.superior-datos{
+  display: grid;
+  justify-items: start; 
+  row-gap: .25rem;
+  font-weight: bolder;
+}
+
+footer .inferior {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 1rem;
+    color: #7a7a7a;
+}
+
+.inferior a {
+    color:#7a7a7a;
+}
+
+.inferior h4, .inferior h4 a {
+    color:black;
+    font-weight: bold;
+}
+
+.inferior div:nth-child(1){
+    padding:0 0 0 3rem;
+    text-align: left;
+}
+
+.inferior div:nth-child(1) div{
+    align-items: center;
+}
+
+.inferior div:nth-child(2){
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: right;
+}
+
+.inferior div:nth-child(2) div{
+    display: inline-block;
+    align-items: end;
+}
+.puntos-venta-lista{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+footer .inferior a svg {
+  width: 22px;
+  height: 22px;
+  color: #7a7a7a; /* gris elegante */
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+footer .inferior a svg:hover {
+  color: #000; /* cambia a negro al pasar el mouse */
+  transform: scale(1.1);
+}
+
+footer .inferior a {
+  text-decoration: none;
+}
+
+/* Index.html*/
+.seccion-uno-texto{
+    display: grid;
+    width: 50%;
+}
+.botones{
+    padding:3rem 0;
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+}
+
+.seccion-dos {
+    text-align: center;
+    padding-top:10rem;
+    padding-bottom: 4rem;
+}
+
+.seccion-tres-imagenes {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: space-around;
+}
