@@ -9,7 +9,6 @@ html {
 
 body {
     margin: 0;
-    padding: 0px 20px;
     font-size:1.6rem;
 }
 
@@ -60,9 +59,13 @@ a {
     0 10px 14px -8px rgba(0,0,0,.25); /* blur hacia abajo */
 }
 
+.negro {
+    background-color: black;
+}
+
 /*Footer */
 footer {
-    padding-bottom: 5rem;
+    padding: 0 2rem 5rem 2rem;
 }
 footer .superior{
   padding: 5rem 0;
@@ -137,8 +140,17 @@ footer .inferior a {
   text-decoration: none;
 }
 
+.seccion-uno {
+    background-image: url('../imgs/Banner\ inicial\ Gran\ Mitote.webp');
+    background-size:cover;
+    background-position: center right;
+    background-repeat:no-repeat;
+    height:540px;
+}
+
 /* Index.html*/
 .seccion-uno-texto{
+    color: white;
     display: grid;
     width: 50%;
 }
@@ -150,13 +162,23 @@ footer .inferior a {
 }
 
 .seccion-dos {
+    color:white;
     text-align: center;
     padding-top:10rem;
     padding-bottom: 4rem;
+    height:430px;
+    background-image: url('../imgs/2do\ banner\ Gran\ Mitote.webp');
+    background-size:cover;
+    background-position: center;
+    background-repeat:no-repeat;
 }
 
-.seccion-tres-imagenes {
+.seccion-tres {
     display: grid;
     grid-template-columns: repeat(2,1fr);
     justify-content: space-around;
+    align-items:center;
+    justify-items:center;
+    padding: 3rem 0;
+    gap: 2rem;
 }
