@@ -140,6 +140,12 @@ footer .inferior a {
   text-decoration: none;
 }
 
+.logo img {
+    height:4rem;
+    width:4rem;
+}
+
+/* Index.html*/
 .seccion-uno {
     background-image: url('../imgs/Banner\ inicial\ Gran\ Mitote.webp');
     background-size:cover;
@@ -148,7 +154,6 @@ footer .inferior a {
     height:540px;
 }
 
-/* Index.html*/
 .seccion-uno-texto{
     color: white;
     display: grid;
@@ -222,4 +227,12 @@ footer .inferior a {
     color:white;
     padding: 1rem 2rem;
     border-radius: 1rem;
+}
+
+/*Contacto*/
+.contacto-hero {
+    background-image: url('../imgs/Banner\ inicial\ contacto.webp');
+    background-size:cover;
+    background-position: center;
+    min-height:540px;
 }
