@@ -182,3 +182,44 @@ footer .inferior a {
     padding: 3rem 0;
     gap: 2rem;
 }
+
+/* Tienda */
+.tienda h1 {
+    text-align: center;
+}
+
+.seccion-botellas {
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items:center;
+    justify-items:center;
+    padding: 2rem;
+}
+
+.seccion-botellas-botella {
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    margin:2rem;
+}
+
+.seccion-botellas-botella p {
+    margin-top:0;
+}
+
+.seccion-botellas img {
+    border: #7a7a7a 0.1rem solid;
+    border-radius: 2em;
+}
+
+.precio-botella {
+    font-weight: bold;
+    font-size: large;
+}
+
+.comprar-botella-boton {
+    background-color: black;
+    color:white;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+}
