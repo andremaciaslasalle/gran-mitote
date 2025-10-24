@@ -214,7 +214,7 @@ footer .inferior a {
 
 .seccion-botellas img {
     border: #7a7a7a 0.1rem solid;
-    border-radius: 2em;
+    border-radius: 3rem;
 }
 
 .precio-botella {
@@ -235,4 +235,26 @@ footer .inferior a {
     background-size:cover;
     background-position: center;
     min-height:540px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.contacto-card {
+    background-color: white;
+    color: black;
+    padding: 1rem 5rem 5rem 5rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.contacto-card-p1{
+    padding: 5rem;
+    border-bottom: #000 0.1rem solid;
+}
+
+.contacto-card-p2 {
+    font-weight: bold;
 }
