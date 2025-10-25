@@ -188,6 +188,19 @@ footer .inferior a {
     gap: 2rem;
 }
 
+/*Origen*/
+.origen-banner-1 {
+    color:white;
+    background-image: url('../imgs/Banner-1-origen.webp');
+    background-size:cover;
+    background-position: center;
+    min-height:540px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
 /* Tienda */
 .tienda h1 {
     text-align: center;
