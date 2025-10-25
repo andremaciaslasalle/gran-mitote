@@ -212,11 +212,36 @@ footer .inferior a {
     background-image: url('../imgs/Banner-1-origen.webp');
     background-size:cover;
     background-position: center;
-    min-height:540px;
-    align-items: center;
-    justify-content: center;
+    min-height:480px;
     display: flex;
     flex-direction: row-reverse;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.origen-banner-1 h1 {
+    font-size: xx-large;
+}
+
+.origen-banner-1 > div {
+    flex: 0 0 50%;
+    max-width: 50%;
+    display: flex;
+    align-items: center;
+    padding: 3rem;
+}
+
+.origen-banner-1 > div:first-child {
+    justify-content: center;
+    text-align: center;
+}
+
+.origen-banner-1 > div:last-child {
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    text-align: left;
+    row-gap: 1.5rem;
 }
 
 /* Tienda */
