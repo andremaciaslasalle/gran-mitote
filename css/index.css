@@ -279,7 +279,7 @@ footer .inferior a {
     grid-template-columns: 1fr;
     }
 
-    .seccion-botellas img {
+    .seccion-botellas-botella {
         width: 100%;
         max-width: 420px;
         height: auto;
