@@ -258,3 +258,26 @@ footer .inferior a {
 .contacto-card-p2 {
     font-weight: bold;
 }
+
+/* Responsive design */
+@media (max-width: 905px) {
+    .seccion-tres {
+        grid-template-columns: 1fr; /* 1 columna en móvil */
+        gap: 1.5rem;
+        padding: 2rem 1rem;
+        justify-items: center;
+        align-items: center;
+    }
+    /* Ajuste opcional de imágenes dentro de las secciones para que no desborden */
+    .seccion-tres img {
+        width: 100%;
+        max-width: 420px;
+        height: auto;
+    }
+}
+
+@media (max-width: 647px) {
+        header nav a{
+        display:block;
+    }
+}
