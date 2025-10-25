@@ -152,17 +152,30 @@ footer .inferior a {
     background-position: center right;
     background-repeat:no-repeat;
     height:540px;
+    display: flex;
+    padding-left: 5%;
 }
 
 .seccion-uno-texto{
     color: white;
-    display: grid;
-    width: 50%;
-}
-.botones{
-    padding:3rem 0;
     display: flex;
-    gap: 5px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    row-gap: 1.5rem;
+    width: 33.333%;
+    height: 100%;
+}
+
+.seccion-uno h1{
+    font-size: 6rem;
+}
+
+.botones{
+    padding:5rem 0;
+    display: flex;
+    gap: 0.5rem;
     justify-content: center;
 }
 
@@ -176,6 +189,11 @@ footer .inferior a {
     background-size:cover;
     background-position: center;
     background-repeat:no-repeat;
+}
+
+.seccion-dos h2{
+    font-size: 12rem;
+    
 }
 
 .seccion-tres {
@@ -353,6 +371,14 @@ footer .inferior a {
 }
 
 /* Responsive design */
+@media (max-width: 872px) {
+    .seccion-dos {
+        height: auto;
+        min-height: 520px;
+        padding: 8rem 2rem 5rem;
+    }
+}
+
 @media (max-width: 905px) {
     .seccion-tres {
         grid-template-columns: 1fr; /* 1 columna en móvil */
