@@ -274,15 +274,13 @@ footer .inferior a {
         max-width: 420px;
         height: auto;
     }
-
     .seccion-botellas {
-    grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
+        padding:0;
     }
 
-    .seccion-botellas-botella {
-        width: 100%;
-        max-width: 420px;
-        height: auto;
+    .seccion-botellas-botella img{
+        width:65%;
     }
 }
 
