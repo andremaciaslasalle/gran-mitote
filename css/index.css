@@ -242,6 +242,86 @@ footer .inferior a {
     border-radius: 1rem;
 }
 
+/* Cata */
+.cata-banner-1 {
+    color:white;
+    background-image: url('../imgs/banner-cata-1.webp');
+    background-size:cover;
+    background-position: center;
+    min-height:540px;
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.cata-banner-1 div {
+    padding:3rem;
+    width: 50%;
+    margin-left: auto; /* empuja el contenido hacia el lado derecho */
+    text-align: right;
+}
+
+.cata-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    padding: 1rem 3rem;
+    margin: 2rem auto;
+    border-radius: 1rem;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    text-align: center;
+}
+
+.cata-banner-botella {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    max-width: 1100px;
+    margin: 4rem auto;
+    padding: 4rem;
+    background-color: #fff;
+    box-shadow:
+        0 2px 6px rgba(0, 0, 0, 0.08),
+        0 20px 35px rgba(0, 0, 0, 0.12);
+}
+
+.cata-banner-text {
+    flex: 1 1 50%;
+    display:flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.cata-banner-text h2 {
+    margin: 0;
+    font-size: 2.8rem;
+}
+
+.cata-banner-text p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+.cata-banner-botella img {
+    flex: 1 1 50%;
+    max-width: 100%;
+    max-height:450px;
+    align-self: center;
+    object-fit: contain;
+}
+
+.cata-botones {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
 /*Contacto*/
 .contacto-hero {
     background-image: url('../imgs/Banner\ inicial\ contacto.webp');
@@ -294,6 +374,21 @@ footer .inferior a {
 
     .seccion-botellas-botella img{
         width:65%;
+    }
+
+    .cata-banner-botella {
+        flex-direction: column;
+        text-align: center;
+        padding: 2.5rem;
+    }
+
+    .cata-banner-text {
+        text-align: center;
+        align-items: center;
+    }
+
+    .cata-banner-botella img {
+        width: 60%;
     }
 }
 
