@@ -220,16 +220,23 @@ footer .inferior a {
 }
 
 /* Tienda */
+.tienda {
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+}
+
 .tienda h1 {
     text-align: center;
+    padding:5rem;
 }
 
 .seccion-botellas {
     display:grid;
+    max-width: 1000px;
     grid-template-columns: repeat(2,1fr);
     align-items:center;
     justify-items:center;
-    padding: 2rem;
 }
 
 .seccion-botellas-botella {
@@ -246,6 +253,7 @@ footer .inferior a {
 .seccion-botellas img {
     border: #7a7a7a 0.1rem solid;
     border-radius: 3rem;
+    max-height:500px;
 }
 
 .precio-botella {
