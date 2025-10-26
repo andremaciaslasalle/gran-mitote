@@ -224,6 +224,11 @@ footer .inferior a {
     gap: 2rem;
 }
 
+.seccion-tres img {
+    max-height: 800px;
+    border-radius: 1rem;
+}
+
 /*Origen*/
 .origen-banner-1 {
     color: white;
@@ -238,7 +243,12 @@ footer .inferior a {
 }
 
 .origen-banner-1 h1 {
-    font-size: xx-large;
+    font-size: 12rem;
+}
+
+.origen-banner-1 p,
+ul {
+    font-size: 2rem;
 }
 
 .origen-banner-1>div {
@@ -480,5 +490,14 @@ footer .inferior a {
 
     .seccion-uno h1 {
         font-size: 3rem;
+    }
+
+    .origen-banner-1 h1 {
+        font-size: 6rem;
+    }
+
+    .origen-banner-1 p,
+    ul {
+        font-size: 1rem;
     }
 }
