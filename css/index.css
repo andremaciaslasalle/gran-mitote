@@ -1,18 +1,23 @@
 /*Globales*/
 html {
-  box-sizing: border-box;
-  font-size: 62.5%; /* 1REM es igual a 10px*/
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /* 1REM es igual a 10px*/
 }
-*, *:before, *:after {
-  box-sizing: inherit;
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
 }
 
 body {
+    font-family: "Oswald", sans-serif;
     margin: 0;
-    font-size:1.6rem;
+    font-size: 1.6rem;
 }
 
-header{
+header {
     display: flex;
     height: 88px;
     justify-content: space-between;
@@ -21,16 +26,18 @@ header{
     align-items: center;
 }
 
-h1,h2,h3 {
+h1,
+h2,
+h3 {
     margin: 1rem 0 0 0;
-    text-transform:uppercase;
+    text-transform: uppercase;
     padding-top: 2rem;
 }
 
 a {
     text-decoration: none;
-    color:black;
-    padding:0 2rem;
+    color: black;
+    padding: 0 2rem;
 }
 
 .btn {
@@ -38,7 +45,7 @@ a {
     border-radius: 3px;
     color: black;
     border: 2px solid black;
-    border-radius:1rem;
+    border-radius: 1rem;
     padding: 1rem;
 }
 
@@ -47,7 +54,7 @@ a {
     border-radius: 3px;
     color: #ffffff;
     border: 2px solid rgb(255, 255, 255);
-    border-radius:1rem;
+    border-radius: 1rem;
     padding: 1rem;
 }
 
@@ -55,8 +62,10 @@ a {
 
 .borde {
     box-shadow:
-    0 1px 0 rgba(0,0,0,.08),          /* línea sutil */
-    0 10px 14px -8px rgba(0,0,0,.25); /* blur hacia abajo */
+        0 1px 0 rgba(0, 0, 0, .08),
+        /* línea sutil */
+        0 10px 14px -8px rgba(0, 0, 0, .25);
+    /* blur hacia abajo */
 }
 
 .negro {
@@ -67,21 +76,25 @@ a {
 footer {
     padding: 0 2rem 5rem 2rem;
 }
-footer .superior{
-  padding: 5rem 0;
-  display: grid;
-  grid-template-columns: 1.2fr 1fr; 
-  align-items: center;
-  gap: 2rem;
-}
-footer .superior h4,
-footer .superior p{ margin:0; }
 
-.superior-datos{
-  display: grid;
-  justify-items: start; 
-  row-gap: .25rem;
-  font-weight: bolder;
+footer .superior {
+    padding: 5rem 0;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    align-items: center;
+    gap: 2rem;
+}
+
+footer .superior h4,
+footer .superior p {
+    margin: 0;
+}
+
+.superior-datos {
+    display: grid;
+    justify-items: start;
+    row-gap: .25rem;
+    font-weight: bolder;
 }
 
 footer .inferior {
@@ -92,71 +105,76 @@ footer .inferior {
 }
 
 .inferior a {
-    color:#7a7a7a;
+    color: #7a7a7a;
 }
 
-.inferior h4, .inferior h4 a {
-    color:black;
+.inferior h4,
+.inferior h4 a {
+    color: black;
     font-weight: bold;
 }
 
-.inferior div:nth-child(1){
-    padding:0 0 0 3rem;
+.inferior div:nth-child(1) {
+    padding: 0 0 0 3rem;
     text-align: left;
 }
 
-.inferior div:nth-child(1) div{
+.inferior div:nth-child(1) div {
     align-items: center;
 }
 
-.inferior div:nth-child(2){
-    display:grid;
+.inferior div:nth-child(2) {
+    display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: right;
 }
 
-.inferior div:nth-child(2) div{
+.inferior div:nth-child(2) div {
     display: inline-block;
     align-items: end;
 }
-.puntos-venta-lista{
+
+.puntos-venta-lista {
     list-style: none;
     padding: 0;
     margin: 0;
 }
+
 footer .inferior a svg {
-  width: 22px;
-  height: 22px;
-  color: #7a7a7a; /* gris elegante */
-  transition: color 0.3s ease, transform 0.3s ease;
+    width: 22px;
+    height: 22px;
+    color: #7a7a7a;
+    /* gris elegante */
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 footer .inferior a svg:hover {
-  color: #000; /* cambia a negro al pasar el mouse */
-  transform: scale(1.1);
+    color: #000;
+    /* cambia a negro al pasar el mouse */
+    transform: scale(1.1);
 }
 
 footer .inferior a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .logo img {
-    height:4rem;
-    width:4rem;
+    height: 4rem;
+    width: 4rem;
 }
 
 /* Index.html*/
 .seccion-uno {
     background-image: url('../imgs/Banner\ inicial\ Gran\ Mitote.webp');
-    background-size:cover;
+    background-size: cover;
     background-position: center right;
-    background-repeat:no-repeat;
-    height:540px;
+    background-repeat: no-repeat;
+    height: 540px;
     display: flex;
     padding-left: 5%;
 }
 
-.seccion-uno-texto{
+.seccion-uno-texto {
     color: white;
     display: flex;
     flex-direction: column;
@@ -168,51 +186,51 @@ footer .inferior a {
     height: 100%;
 }
 
-.seccion-uno h1{
+.seccion-uno h1 {
     font-size: 6rem;
 }
 
-.botones{
-    padding:5rem 0;
+.botones {
+    padding: 5rem 0;
     display: flex;
     gap: 0.5rem;
     justify-content: center;
 }
 
 .seccion-dos {
-    color:white;
+    color: white;
     text-align: center;
-    padding-top:10rem;
+    padding-top: 10rem;
     padding-bottom: 4rem;
-    height:430px;
+    height: 430px;
     background-image: url('../imgs/2do\ banner\ Gran\ Mitote.webp');
-    background-size:cover;
+    background-size: cover;
     background-position: center;
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
 }
 
-.seccion-dos h2{
+.seccion-dos h2 {
     font-size: 12rem;
-    
+
 }
 
 .seccion-tres {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     justify-content: space-around;
-    align-items:center;
-    justify-items:center;
+    align-items: center;
+    justify-items: center;
     padding: 3rem 0;
     gap: 2rem;
 }
 
 /*Origen*/
 .origen-banner-1 {
-    color:white;
+    color: white;
     background-image: url('../imgs/Banner-1-origen.webp');
-    background-size:cover;
+    background-size: cover;
     background-position: center;
-    min-height:480px;
+    min-height: 480px;
     display: flex;
     flex-direction: row-reverse;
     align-items: stretch;
@@ -223,7 +241,7 @@ footer .inferior a {
     font-size: xx-large;
 }
 
-.origen-banner-1 > div {
+.origen-banner-1>div {
     flex: 0 0 50%;
     max-width: 50%;
     display: flex;
@@ -231,12 +249,12 @@ footer .inferior a {
     padding: 3rem;
 }
 
-.origen-banner-1 > div:first-child {
+.origen-banner-1>div:first-child {
     justify-content: center;
     text-align: center;
 }
 
-.origen-banner-1 > div:last-child {
+.origen-banner-1>div:last-child {
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
@@ -253,32 +271,32 @@ footer .inferior a {
 
 .tienda h1 {
     text-align: center;
-    padding:5rem;
+    padding: 5rem;
 }
 
 .seccion-botellas {
-    display:grid;
+    display: grid;
     max-width: 1000px;
-    grid-template-columns: repeat(2,1fr);
-    align-items:center;
-    justify-items:center;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
 }
 
 .seccion-botellas-botella {
     align-items: center;
     justify-items: center;
     text-align: center;
-    margin:2rem;
+    margin: 2rem;
 }
 
 .seccion-botellas-botella p {
-    margin-top:0;
+    margin-top: 0;
 }
 
 .seccion-botellas img {
     border: #7a7a7a 0.1rem solid;
     border-radius: 3rem;
-    max-height:500px;
+    max-height: 500px;
 }
 
 .precio-botella {
@@ -288,27 +306,28 @@ footer .inferior a {
 
 .comprar-botella-boton {
     background-color: black;
-    color:white;
+    color: white;
     padding: 1rem 2rem;
     border-radius: 1rem;
 }
 
 /* Cata */
 .cata-banner-1 {
-    color:white;
+    color: white;
     background-image: url('../imgs/banner-cata-1.webp');
-    background-size:cover;
+    background-size: cover;
     background-position: center;
-    min-height:540px;
+    min-height: 540px;
     align-items: center;
     display: flex;
     justify-content: flex-end;
 }
 
 .cata-banner-1 div {
-    padding:3rem;
+    padding: 3rem;
     width: 50%;
-    margin-left: auto; /* empuja el contenido hacia el lado derecho */
+    margin-left: auto;
+    /* empuja el contenido hacia el lado derecho */
     text-align: right;
 }
 
@@ -328,7 +347,7 @@ footer .inferior a {
 }
 
 .cata-banner-botella {
-    display:flex;
+    display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 3rem;
@@ -343,7 +362,7 @@ footer .inferior a {
 
 .cata-banner-text {
     flex: 1 1 50%;
-    display:flex;
+    display: flex;
     flex-direction: column;
     gap: 1.5rem;
 }
@@ -361,7 +380,7 @@ footer .inferior a {
 .cata-banner-botella img {
     flex: 1 1 50%;
     max-width: 100%;
-    max-height:450px;
+    max-height: 450px;
     align-self: center;
     object-fit: contain;
 }
@@ -376,9 +395,9 @@ footer .inferior a {
 /*Contacto*/
 .contacto-hero {
     background-image: url('../imgs/Banner\ inicial\ contacto.webp');
-    background-size:cover;
+    background-size: cover;
     background-position: center;
-    min-height:540px;
+    min-height: 540px;
     align-items: center;
     justify-content: center;
     display: flex;
@@ -394,7 +413,7 @@ footer .inferior a {
     flex-direction: column;
 }
 
-.contacto-card-p1{
+.contacto-card-p1 {
     padding: 5rem;
     border-bottom: #000 0.1rem solid;
 }
@@ -414,25 +433,28 @@ footer .inferior a {
 
 @media (max-width: 905px) {
     .seccion-tres {
-        grid-template-columns: 1fr; /* 1 columna en móvil */
+        grid-template-columns: 1fr;
+        /* 1 columna en móvil */
         gap: 1.5rem;
         padding: 2rem 1rem;
         justify-items: center;
         align-items: center;
     }
+
     /* Ajuste opcional de imágenes dentro de las secciones para que no desborden */
     .seccion-tres img {
         width: 100%;
         max-width: 420px;
         height: auto;
     }
+
     .seccion-botellas {
         grid-template-columns: 1fr;
-        padding:0;
+        padding: 0;
     }
 
-    .seccion-botellas-botella img{
-        width:65%;
+    .seccion-botellas-botella img {
+        width: 65%;
     }
 
     .cata-banner-botella {
@@ -452,7 +474,11 @@ footer .inferior a {
 }
 
 @media (max-width: 647px) {
-        header nav a{
-        display:block;
+    header nav a {
+        display: block;
+    }
+
+    .seccion-uno h1 {
+        font-size: 3rem;
     }
 }
