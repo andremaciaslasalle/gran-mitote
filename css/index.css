@@ -165,13 +165,17 @@ footer .inferior a {
 
 /* Index.html*/
 .seccion-uno {
-    background-image: url('../imgs/Banner\ inicial\ Gran\ Mitote.webp');
+    background-image: url('../imgs/Banner-inicial-fondo.webp');
     background-size: cover;
     background-position: center right;
     background-repeat: no-repeat;
     height: 540px;
-    display: flex;
-    padding-left: 5%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-items: center;
+    padding: 0 5%;
+    column-gap: 4rem;
 }
 
 .seccion-uno-texto {
@@ -182,8 +186,14 @@ footer .inferior a {
     align-items: center;
     text-align: center;
     row-gap: 1.5rem;
-    width: 33.333%;
     height: 100%;
+    width: 100%;
+}
+
+.seccion-uno img {
+    align-self: center;
+    justify-self: center;
+    max-width: 100%;
 }
 
 .seccion-uno h1 {
@@ -195,6 +205,19 @@ footer .inferior a {
     display: flex;
     gap: 0.5rem;
     justify-content: center;
+}
+
+@media (max-width: 905px) {
+    .seccion-uno {
+        grid-template-columns: 1fr;
+        height: auto;
+        padding: 5% 5% 7%;
+        row-gap: 3rem;
+    }
+
+    .seccion-uno-texto {
+        height: auto;
+    }
 }
 
 .seccion-dos {
