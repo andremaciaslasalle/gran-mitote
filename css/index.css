@@ -274,6 +274,26 @@ ul {
     font-size: 2rem;
 }
 
+.origen-banner-1 ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.origen-banner-1 ul li {
+    position: relative;
+    padding-left: 2.5rem;
+}
+
+.origen-banner-1 ul li::before {
+    content: "\f06c";
+    position: absolute;
+    left: 0;
+    color: #fff;
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+}
+
 .origen-banner-1>div {
     flex: 0 0 50%;
     max-width: 50%;
