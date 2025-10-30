@@ -266,7 +266,7 @@ footer .inferior a {
 }
 
 .origen-banner-1 h1 {
-    font-size: 12rem;
+    font-size: 10rem;
 }
 
 .origen-banner-1 p,
@@ -360,8 +360,7 @@ ul {
     padding: 3rem;
     width: 50%;
     margin-left: auto;
-    /* empuja el contenido hacia el lado derecho */
-    text-align: right;
+    text-align: left;
 }
 
 .cata-btn {
@@ -464,7 +463,7 @@ ul {
     }
 }
 
-@media (max-width: 905px) {
+@media (max-width: 950px) {
     .seccion-tres {
         grid-template-columns: 1fr;
         /* 1 columna en móvil */
@@ -522,5 +521,11 @@ ul {
     .origen-banner-1 p,
     ul {
         font-size: 1rem;
+    }
+}
+
+@media (max-width: 853px) {
+    .origen-banner-1 h1 {
+        font-size: 7rem;
     }
 }
