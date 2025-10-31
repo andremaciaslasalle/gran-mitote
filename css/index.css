@@ -239,7 +239,7 @@ footer .inferior a {
 
 .seccion-tres {
     display: grid;
-    grid-template-columns: repeat(2, 1f);
+    grid-template-columns: repeat(2, 1fr);
     justify-content: space-around;
     align-items: center;
     justify-items: center;
